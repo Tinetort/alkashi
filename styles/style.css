@@ -385,6 +385,10 @@ table {
   font-family: "Impacted";
   src: url(../fonts/Impacted.ttf);
 }
+@font-face {
+  font-family: "HinaMincho-Regular";
+  src: url(../fonts/HinaMincho-Regular.ttf);
+}
 html {
   font-family: "Fraunces-Thin";
   color: rgb(130, 130, 130);
@@ -810,4 +814,50 @@ hr {
   font-size: 12px;
   line-height: 12px;
   color: rgb(0, 0, 0);
+}
+
+.breadcrumbs {
+  margin-bottom: 50px;
+  font-size: 16px;
+  line-height: 20px;
+  cursor: pointer;
+  color: rgb(0, 0, 0);
+  margin-top: -20px;
+  display: flex;
+}
+.breadcrumbs a {
+  text-decoration: none;
+}
+
+.services-first-section {
+  margin-bottom: 50px;
+}
+
+.services-second-section {
+  margin-bottom: 100px;
+}
+.services-second-section__container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.services-second-section__item {
+  display: flex;
+  background-image: url("../img/servBG.png");
+  width: 450px;
+  height: 200px;
+  margin-bottom: 50px;
+}
+.services-second-section__about-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 0 auto;
+  justify-content: center;
+}
+.services-second-section__about {
+  font-family: "HinaMincho-Regular";
+  font-size: 22px;
+  line-height: 32px;
+  color: rgb(4, 36, 61);
 }/*# sourceMappingURL=style.css.map */
