@@ -134,6 +134,14 @@ hr
     border: none
     color: white
     cursor: pointer
+    &_white
+        width: 180px
+        height: 50px
+        background: #FFFFFF
+        border: 1px solid #62BFFF
+        border-radius: 50px
+        color: #62BFFF
+        cursor: pointer
 // Первая секция
 .first-section
     margin-bottom: 50px
@@ -380,6 +388,7 @@ hr
     display: flex
     a
         text-decoration: none
+// Услуги
 .services-first-section
     margin-bottom: 50px
   
@@ -406,4 +415,57 @@ hr
         font-size: 22px
         line-height: 32px
         color: rgba(4, 36, 61, 1)
-        
+// Врачи
+
+.doctors-first-section
+    margin-bottom: 25px
+.doctors-second-section
+    &__container
+        display: flex
+        flex-wrap: wrap
+        justify-content: space-between
+    &__item
+        display: flex
+        flex-direction: column
+        justify-content: flex-end
+        margin-bottom: 50px
+        &_first
+            margin-right: 142px
+    &__border
+        width: 285px
+        height: 100px
+        padding: 3px
+        border: 1px solid #62BFFF
+        display: flex
+        flex-direction: column
+        align-items: center
+    &__about
+        width: 285px   
+    &__last-two
+        display: flex
+        flex-wrap: wrap
+    &__description
+        font-size: 16px
+.doctors-second-section
+    margin-bottom: 25px
+.doctors-third-section
+    margin-bottom: 78px
+    &__container
+        display: flex
+        justify-content: space-between
+    &__item
+        display: flex
+        flex-direction: column
+        justify-content: flex-end
+    &__border
+        max-width: 285px
+        height: 64px
+        border: 1px solid #62BFFF
+        padding: 5px
+        display: flex
+        flex-direction: column
+        align-items: center
+    &__description
+        font-size: 16px
+    &__about
+        margin-bottom: 10px
