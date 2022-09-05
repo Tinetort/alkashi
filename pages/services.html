@@ -30,9 +30,9 @@
         <div class="navbar-section__info info-menu">
           <ul class="info-menu__info">
             <li class="info-menu__info-item_tel">
-              <a href="tel:+7(800)000-00-00"></a>
+              <a href="tel:+78000000000">+7(800)000-00-00</a>
               <img src="../icons/phone_iphone.png" alt="phone_iphone" />
-              +7(800)000-00-00
+              
             </li>
             <li class="info-menu__info-item_back">
               <p>Обратный звонок</p>
@@ -53,7 +53,7 @@
         <a class="navbar-menu__item" href="doctors.html"><li>Специалисты</li></a>
         <a class="navbar-menu__item" href=""><li>Отзывы</li></a>
       </ul>
-      <button class="navbar-menu__btn button">Записаться на прием</button>
+      <button class="navbar-menu__btn button popup-btn">Записаться на прием</button>
     </div>
     <section class="container breadcrumbs">
       <a href="../index.html"><h3>Главная</h3></a>/<a href="services.html"
@@ -204,5 +204,58 @@
         </p>
       </footer>
     </section>
+
+    <div class="pop-up" id="pop-up">
+      <div class="pop-up__container">
+        <div class="pop-up__body" id="pop-up-body">
+          <h3 class="pop-up__description">Заказать звонок</h3>
+          <hr class="pop-up__hr">
+          <p class="pop-up__text">Поможем круглосуточно.</p>
+          <div class="pop-up__flex">
+            <div class="pop-up__f-item">
+              <img src="../icons/round.png" alt="">
+              <p>Приедем в любой район в течении 30 минут.</p>
+            </div>
+            <div class="pop-up__f-item">
+              <img src="../icons/fi-rs-file-add.png" alt="">
+              <p>Опытные врачи.</p>
+            </div>
+          </div>
+          <form action="https://formspree.io/f/mgeqoonp" method="POST">
+            <div class="heading">
+              <label>
+                Ваша почта:
+                <input
+                  placeholder="Ваша почта..."
+                  class="input-class"
+                  type="email"
+                  required=""
+                  name="_replyto"
+                />
+              </label>
+            </div>
+            <div class="heading">
+              <label>
+                Ваше сообщение:
+                <textarea
+                  class="input-class"
+                  placeholder="Начните писать здесь..."
+                  name="message"
+                  required=""
+                ></textarea>
+              </label>
+            </div>
+            <br />
+            <!-- your other form fields go here -->
+            <div class="heading">
+              <button class="pop-up__btn button" type="submit">Отправить</button>
+            </div>
+          </form>
+          <div class="pop-up__close" id="pop-up-close">&#10006</div>
+        </div>
+      </div>
+    </div>
+
+    <script src="../js/script.js"></script>
   </body>
 </html>

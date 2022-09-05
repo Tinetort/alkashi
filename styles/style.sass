@@ -33,6 +33,67 @@
 html
     font-family: 'Fraunces-Thin'
     color: rgba(130, 130, 130, 1)
+.pop-up
+    width: 100%
+    height: 100%
+    position: fixed
+    left: 0
+    top: 0
+    transform: translateY(50.0%) scale(0)
+    transition: .7s ease-in-out
+    background-color: transparent
+    z-index: 2
+    &__container
+        display: flex
+        width: 100%
+        height: 100%
+    &__body
+        border: 1px solid rgba(98, 191, 255, 1)
+        margin: auto
+        width: 200px
+        min-height: 300px
+        background-color: #fff
+        border-radius: 10px
+        text-align: center
+        position: relative
+        box-shadow: 10px 10px 15px white
+    &__close
+        color: black
+        position: absolute
+        top: 2px
+        right: 3px
+        font-size: 25px
+        cursor: pointer
+    &__description
+        font-size: 16px
+        line-height: 20px
+        margin: 10px 0
+    &__hr
+        margin: 0
+        width: 197px
+        color: rgba(130, 130, 130, 1)
+    &__text
+        color: rgba(130, 130, 130, 1)
+    &__btn
+        margin-bottom: 10px!important
+        width: 120px!important
+    &__flex
+        display: flex
+        justify-content: space-around
+    &__f-item
+        p
+            max-width: 90px
+            font-size: 13px
+            line-height: 12px
+    form
+        input,textarea
+            border: 1px solid rgba(98, 191, 255, 1)
+            
+.pop-up.active
+    background-color: rgba(0,0,0,.8 )
+    transform: translate(0%) scale(100%)
+    
+
 .p
     color: rgba(0, 0, 0, 1)
     line-height: 22.19px
@@ -82,7 +143,6 @@ html
             margin-bottom: 16px
             font-family: 'Forum'
             margin-left: 10px
-            
 
         img
             position: absolute
@@ -98,6 +158,9 @@ html
             img
                 position: absolute
                 left: -25px
+            a
+                text-decoration: none
+                color: rgba(4, 36, 61, 1)
         &_back
             font-size: 16px
             line-height: 18px
@@ -299,7 +362,7 @@ hr
         margin-bottom: 25px
     &__btn
         background-color: white
-        color:#62BFFF
+        color: #62BFFF
         border: 1px solid #62BFFF
         cursor: pointer
         font-weight: 600
@@ -319,7 +382,7 @@ hr
             margin: 0 auto
         p
             margin: 0 auto
-        
+
 .footer-section
     position: relative
     border: 1px solid #62BFFF
@@ -377,7 +440,6 @@ hr
         line-height: 12px
         color: rgba(0, 0, 0, 1)
 
-
 .breadcrumbs
     margin-bottom: 50px
     font-size: 16px
@@ -391,7 +453,7 @@ hr
 // Услуги
 .services-first-section
     margin-bottom: 50px
-  
+
 .services-second-section
     margin-bottom: 100px
     &__container
@@ -440,7 +502,7 @@ hr
         flex-direction: column
         align-items: center
     &__about
-        width: 285px   
+        width: 285px
     &__last-two
         display: flex
         flex-wrap: wrap
